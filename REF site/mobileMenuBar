@@ -1,0 +1,68 @@
+<!-- #for mobile menu bar html code -->
+<div class="col-6 desktop-hide">
+	<div class="mobile-menu-trigger mobile">
+	<i class="fa fa-bars"></i>
+	</div>
+	<div class="main-menu mobile-menu">
+	<?php wp_nav_menu( array("theme_location" => "menu-1")); ?>
+	</div>
+</div>
+
+/* Mobile Menu CSS
+================================ */
+    .mobile-menu-trigger.mobile {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .mobile-menu-trigger.mobile i {
+        color: white;
+        background: #6be1c9 !important;
+        font-size: 24px;
+        height: 36px;
+        width: 40px;
+        line-height: 36px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+    }
+    .fa-times:before {
+        content: "\f00d";
+    }
+    .mobile-menu {
+        display: block;
+        width: 50%;
+        background-color: rgb(10 10 9 / 82%);
+        position: fixed;
+        z-index: 30;
+        box-shadow: -2px 0px 15px;
+        transition: 0.5s;
+        transform: translateX(1500px);
+    }
+    .mobile-menu.mobile-menu-show {
+        transition: 0.5s;
+        transform: translateX(-10px);
+    }
+    .main-menu ul.menu {
+        display: block;
+        line-height: 3;
+        text-align: center;
+        padding: 20px 0px 30px;
+    }
+
+
+<!--Jquery CDN script-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--Mobile menu Jquery function -->
+    <script>
+        //Jquery click function
+        $(document).ready(function() {
+            // for mobile menu
+            $(".fa-bars").on('click', function() {
+                $(".mobile-menu").toggleClass("mobile-menu-show");
+                $(".fa-bars").toggleClass("fa-times");
+            });
+        });
+    </script>

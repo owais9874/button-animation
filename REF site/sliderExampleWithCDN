@@ -1,0 +1,237 @@
+<!-- Bootstrap CDN and OwlCarouse slider CDN -->
+
+<head>
+  <!-- Font-Awesome Icon Link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap file link -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+
+  <!-- OwlCarouse link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+
+  <!--AOS animation css-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Slick slider link link -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"
+  />
+</head>
+
+<!--Jquery CDN script-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Bootstrap js-script file -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+  integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+
+<!-- Owl Carousel js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--AOS animation scripts-->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+  integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+  AOS.init();
+</script>
+
+<!--Slick Fade Image & Text Slider Scripts -->
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"
+></script>
+
+<!--Slick Slider Scripts for Belive-Us Section 6-->
+<script type="text/javascript">
+  $(".fade-img").slick({
+    infinite: true,
+    speed: 700,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".fade-txt",
+  });
+
+  $(".fade-txt").slick({
+    infinite: true,
+    speed: 700,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    asNavFor: ".fade-img",
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+  });
+</script>
+
+<!--Owl Carousel Scripts for Client Logo section 2-->
+<script>
+  $(".carousel-client-logo").owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 3000,
+    autoplaySpeed: 5000,
+    //autoplayHoverPause: true,
+    //nav:true,
+    //navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    responsive: {
+      0: {
+        items: 0,
+      },
+      300: {
+        items: 3,
+      },
+      600: {
+        items: 3,
+      },
+      800: {
+        items: 5,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+</script>
+
+<!-- Only for Fade Image Slide in Bootstrap no need include cdn -->
+<div
+  id="carouselExampleFade"
+  class="carousel slide carousel-fade"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="<?php echo get_template_directory_uri();?>/img/seller-img.png"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="<?php echo get_template_directory_uri();?>/img/seller-img1.png"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Fade Image and Text Slider in Bootstrap include with cdn -->
+<div class="testimoial-left">
+  <div class="testimoial-left-inner">
+    <div class="fade-img">
+      <div class="belive-user">
+        <img src="<?php echo get_template_directory_uri();?>/img/user-1.jpg" />
+        <div class="item-name">
+          <h2>Mary White</h2>
+          <spen>Owner, eCommerce Company</spen>
+        </div>
+      </div>
+      <div class="belive-user">
+        <img src="<?php echo get_template_directory_uri();?>/img/user-2.jpg" />
+        <div class="item-name">
+          <h2>Heather Petersen</h2>
+          <spen>VP, Account Operations</spen>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fade-txt">
+  <div class="fade-item">
+    <div class="item-data">
+      <p>
+        “InterNativeBPO’s unique business model makes it easy for companies of
+        any size to establish their operations, irrespective of where they are
+        in the world.”
+      </p>
+      <a href="#" class="item-tagline">
+        <i class="fa-brands fa-telegram"></i> https://t.me/s/mary.wwhite</a
+      >
+    </div>
+  </div>
+  <div class="fade-item">
+    <div class="item-data">
+      <p>
+        “Our InterNativeBPO back office team works side-by-side with our Chicago
+        HQ, supporting critical processes and functions. As a result, we are now
+        spending 70% more time engaging with our clients instead of fretting
+        over minor support issues. This has helped us to cut costs and grow our
+        businesses tremendously.
+      </p>
+      <a href="#" class="item-tagline">
+        <i class="fa-brands fa-twitter"></i> twitter.com/heather_petersen</a
+      >
+    </div>
+  </div>
+</div>
+
+<!-- Owl-Carousel bootstrap Simple Slider -->
+<div class="owl-carousel carousel-services s4-carousel">
+  <div class="owlCarousel">
+    <div class="services-detail">
+      <a href="#">
+        <h3>Formatting</h3>
+        <p>
+          We make your book’s content more appealing and organized by
+          integrating each section with relevant modern formats, according to
+          its general recurring theme.
+        </p>
+        <i class="fa fa-long-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="owlCarousel">
+    <div class="services-detail">
+      <a href="#">
+        <h3>Interactive E-Books</h3>
+        <p>
+          Our team enables your viewers to explore your book on a new level by
+          transforming it into a highly interactive e-book with audio, text, 3d
+          maps, and animations.
+        </p>
+        <i class="fa fa-long-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>

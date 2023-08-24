@@ -1,0 +1,42 @@
+<!--HTML code for header-->
+<header>
+	<div class="main-header">*****</div>
+</header>
+
+/* Scroll CSS
+============================ */
+.main-header {
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 16;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.main-header.fixed-header {
+    position: fixed;
+    padding: 10px 0;
+    background: #333333;
+    z-index: 16;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+/* END============================ */
+
+<!--Jquery CDN script-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--Scroll Script-->
+<script type="text/javascript">
+	$(window).scroll(function () {
+		if ($(window).scrollTop() >= 100) {
+			$('.main-header').addClass('fixed-header');
+		}
+		else {
+			$('.main-header').removeClass('fixed-header');
+		}
+	});
+</script>

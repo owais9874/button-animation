@@ -7,6 +7,65 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: var(--white);
+}
+
+:root {
+  --white: #ffffff;
+  --green1: #246021;
+  --green2: #83b31d;
+  --green3: #97c531;
+  --green4: #bde579;
+  --green5: #d1f585;
+}
+.main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.default-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  color: var(--green1);
+}
+.sub-heading1 {
+  font-size: 25px;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 3px #000;
+  margin: 0px 0px 20px 0px;
+}
+
+.sub-heading2 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--green1);
+  margin-bottom: 0;
+}
+.default-txt {
+  text-align: center;
+  font-weight: 500;
+}
+
+/*for mobile*/
+@media (min-width: 320px) and (max-width: 767px) {}
+@media (max-width: 767px) {
+}
+
+.style-img {
+  content: "";
+  -webkit-clip-path: polygon(25% 0, 100% 0%, 101% 70%, 66% 80%, 0% 17%);
+  clip-path: polygon(25% 0, 100% 0%, 101% 70%, 66% 80%, 0% 17%);
+  background-position: -125px;
+}
+
 body,
 html {
   height: 100%;
@@ -1241,8 +1300,6 @@ p {
     padding-top: 50px !important;
   }
 }
-
-
 
 /* ============================ Now this css used in site ============================ */
 html,

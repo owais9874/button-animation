@@ -1,0 +1,54 @@
+<!--HTML code for down to top-->
+<div class="back-to-top">
+<a id="button" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></a>
+</div>
+
+
+/* Back to Top CSS
+============================ */
+.back-to-top {
+    display: block;
+    font-size: 30px;
+    right: 20px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+    transition: 0.5s;
+    bottom: -60px;
+    position: relative;
+}
+.hide.show {
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 0px;
+    position: relative;
+}
+/* END============================ */
+
+
+<!--Jquery CDN script-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--Back to Top Button Jquery-->
+<script>
+        // Jquery scroll function
+        var btn =$("#button");
+        $(window).scroll(function(){
+            if ($(window).scrollTop() > 300) {
+             btn.addClass('show');
+                // downscroll code
+            } else {
+                btn.removeClass('show');
+                // upscroll code
+            }
+        });
+        // for click DownToTop button
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+</script>
