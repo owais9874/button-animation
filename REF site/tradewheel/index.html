@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- main style sheet -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <link href="./assets/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Owl-carousel -->
+    <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main">
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-6">
+              <h2>Heading</h2>
+            </div>
+            <div class="col-md-3">
+              <p>
+                Quod rerum vero explicabo alias delectus provident sit odio eum,
+                suscipit ut, veniam consequuntur quasi ea qui et eaque? Itaque,
+                ullam aliquid!
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+  </body>
+  <!-- Jquery -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- Fontawesome -->
+  <script src="./assets/js/all.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl-carousel -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+<!--AOS animation scripts-->
+<script> AOS.init(); </script> 
+
+  <script>
+    $(".carousel-portfolio").owlCarousel({
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      nav: true,
+      navigationText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>",
+      ],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        300: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        800: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+      },
+    });
+  </script>
+</html>
