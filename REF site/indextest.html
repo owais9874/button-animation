@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project3</title>
+
+    <!-- Fontawesome -->
+    <link href="./assets/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Owl-carousel -->
+    <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <!-- main style sheet -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="h-top float-start">
+                <a href="#">
+                  <i class="fa-solid fa-envelope"></i>
+                  info@mail.com
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-top float-end">
+                <a href="#">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-banner">
+      <!-- <div class="container-fluid max-container">
+        <div class="row"> -->
+      <div class="owl-carousel banner-carousel">
+        <div class="item">
+          <h2>Swipe</h2>
+        </div>
+        <div class="item">
+          <h2>Drag</h2>
+        </div>
+        <div class="item">
+          <h2>Responsive</h2>
+        </div>
+      </div>
+      <!-- </div>
+      </div> -->
+    </section>
+  </body>
+  <style>
+    .banner-carousel {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    
+    .owl-dots {
+      text-align: center;
+      padding-top: 15px;
+    }
+    .owl-dots button.owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 3px;
+    }
+    .owl-dots button.owl-dot.active {
+      /* background-color: #000; */
+      border: 1px solid red;
+      height: 20px;
+      width: 20px;
+      padding: 5px !important;
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+      border: 1px solid #fff;
+      padding: 2px;
+    }
+  </style>
+  <!-- Jquery -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- Fontawesome -->
+  <script src="./assets/js/all.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl-carousel -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+  <!--AOS animation scripts-->
+  <!-- <script>
+    AOS.init();
+  </script> -->
+
+  <script>
+    $(".banner-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      // autoplay: true,
+      nav: true,
+      responsive: {
+        200: {
+          items: 1,
+        },
+        300: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        900: {
+          items: 1,
+        },
+        1200: {
+          items: 1,
+        },
+        1600: {
+          items: 1,
+        },
+      },
+    });
+  </script>
+</html>
+
+
+<style>
+    @font-face {
+  font-family: Poppins;
+  src: url(../font/poppins/Poppins-Regular.ttf); /* 400 */
+  src: url(../font/poppins/Poppins-Medium.ttf); /* 500 */
+  src: url(../font/poppins/Poppins-SemiBold.ttf); /* 600 */
+  src: url(../font/poppins/Poppins-Bold.ttf); /* 700 */
+  src: url(../font/poppins/Poppins-Black.ttf); /* 900 */
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../font/roboto/Roboto-Regular.ttf); /* 400 */
+  src: url(../font/roboto/Roboto-Medium.ttf); /* 500 */
+  src: url(../font/roboto/Roboto-Bold.ttf); /* 700 */
+  src: url(../font/roboto/Roboto-Black.ttf); /* 900 */
+}
+
+
+body {
+  position: relative;
+  max-width: 1600px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: var(--white);
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #ee0c0c;
+  --gray: #cfcfcf;
+}
+.font-roboto{
+  font-family: 'Roboto' !important;
+}
+.font-poppins{
+  font-family: 'Poppins' !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+.default-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  color: var(--green1);
+}
+
+.sub-heading1 {
+  font-size: 25px;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 3px #000;
+  margin: 0px 0px 20px 0px;
+}
+
+.sub-heading2 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--green1);
+  margin-bottom: 0;
+}
+
+.default-txt {
+  text-align: center;
+  font-weight: 500;
+}
+
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* header-top */
+.header-top {
+  background-color: var(--black);
+  padding: 10px 0px;
+}
+.h-top a {
+    color: var(--white);
+}
+/* end header-top */
+/*for mobile*/
+@media (max-width: 767px) {
+}
+/*for mobile*/
+@media (min-width: 767px) and (max-width: 992px) {
+}
+
+</style>
