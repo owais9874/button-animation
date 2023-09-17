@@ -1,421 +1,262 @@
-body {
-  font-family: "Roboto", sans-serif !important;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project3</title>
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span,
-small,
-em,
-ul,
-li,
-strong,
-a,
-ol,
-fieldset,
-input,
-textarea,
-tr,
-td,
-thead,
-tbody,
-table {
-  font-family: "Roboto", sans-serif !important;
-}
+    <!-- Fontawesome -->
+    <link href="./assets/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Owl-carousel -->
+    <link href="./assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <!-- main style sheet -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
 
-@font-face {
-  font-family: "Roboto";
-  src: url(../font/Roboto/Roboto-Light.ttf);
-  src: url(../font/Roboto/Roboto-Bold.ttf);
-  src: url(../font/Roboto/Roboto-Medium.ttf);
-  src: url(../font/Roboto/Roboto-Regular.ttf);
-}
+  <style type="text/css">
+    /* ============ desktop view ============ */
+    /* @media all and (min-width: 992px) {
+      .dropdown-menu li {
+        position: relative;
+      }
+      .dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+      }
+      .dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+      }
 
-body {
-  position: relative;
-  max-width: 1600px;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  background: var(--white);
-}
+      .dropdown-menu > li:hover {
+        background-color: #f1f1f1;
+      }
+      .dropdown-menu > li:hover > .submenu {
+        display: block;
+      }
+    } */
+    /* ============ desktop view .end// ============ */
 
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --bgColor: #7bc372;
-  --txtColor: #7c7c7c;
-}
+    /* ============ small devices ============ */
+    /* @media (max-width: 991px) {
+      .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.5rem;
+      }
+    } */
+    /* ============ small devices .end// ============ */
 
-body .my_contact_us {
-  display: block;
-  position: fixed;
-  right: -36px;
-  top: 35%;
-  z-index: 9;
-  transform: rotate(90deg);
-}
+    .product-navbar ul.navbar-nav {
+      display: block !important;
+    }
+  </style>
 
-/*header css*/
-.header-top {
-  background: #e9e9e9;
-  padding: 10px 0px;
-}
-.header-top ul.main-social-list {
-  display: flex;
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0;
-}
-.header-top ul.main-social-list li {
-  margin-right: 20px;
-  background: #848985;
-  padding: 5px;
-  border-radius: 50%;
-}
-.header-top ul.main-social-list li:hover {
-  background: #2e93a4;
-  transition: 0.3s;
-}
+  <body>
+    <header class="section-header py-4">
+      <div class="container">
+        <h2>Demo page</h2>
+      </div>
+    </header>
+    <!-- section-header.// -->
 
-.header-logo-contain {
-  padding: 10px 0px;
-}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <nav class="navbar navbar-expand-lg navbar-light product-navbar">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <li class="active nav-item">
+                    <a class="nav-link" aria-current="page" href="#"
+                      >PERFUMERY BOTTLES</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"
+                      >BEAUTY BOTTLES</a
+                    >
+                  </li>
 
-nav.navbar.my-navbar {
-  float: right;
-}
-nav.navbar.my-navbar .container-fluid {
-  padding-right: 0px;
-}
-ul.navbar-nav {
-  background: #7bc372;
-}
-li.nav-item {
-  padding: 0px 10px;
-  position: relative;
-}
-li.active.nav-item a.nav-link {
-  background: #2e93a4;
-}
-li.nav-item a.nav-link:hover {
-  background: #2e93a4;
-  transition: 0.3s;
-}
-li.nav-item:after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  width: 2px;
-  background: #979797;
-  top: 30px;
-  right: 0;
-}
-li.nav-item:last-child:after {
-  display: none;
-}
-a.nav-link {
-  color: #fff !important;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1px;
-  padding: 40px 20px;
-}
-/*end header css*/
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="javascript:;"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >All Products</a
+                    >
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <li class="dropdown-item">
+                        <a href="/product-category/perfumery-bottles"
+                          >PERFUMERY BOTTLES</a
+                        >
+                      </li>
 
-/*for search css*/
+                      <li class="dropdown-item">
+                        <a href="/product-category/beauty-bottles"
+                          >BEAUTY BOTTLES</a
+                        >
+                      </li>
 
-.search-btn {
-  cursor: pointer;
-  float: right;
-}
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="javascript:;"
+                          id="navbarDropdownMenuLink"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >All Products</a
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdownMenuLink"
+                        >
+                          <li class="dropdown-item">
+                            <a href="/product-category/perfumery-bottles"
+                              >PERFUMERY BOTTLES</a
+                            >
+                          </li>
 
-.search-popup {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 99999;
-  margin-top: -540px;
-  transform: translateX(-100%);
-  background-color: rgba(0, 0, 0, 0.9);
-  -webkit-transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -moz-transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -o-transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  -moz-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  -o-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-}
-.search-active .search-popup {
-  transform: translateY(0%);
-  margin-top: 0;
-}
+                          <li class="dropdown-item">
+                            <a href="/product-category/beauty-bottles"
+                              >BEAUTY BOTTLES</a
+                            >
+                          </li>
 
-.search-popup .close-search.style-two {
-  position: absolute;
-  right: 25px;
-  left: auto;
-  color: #ffffff;
-  width: auto;
-  height: auto;
-  top: 25px;
-  margin: 0px;
-  border: none;
-  background: none !important;
-  box-shadow: none !important;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-.search-popup:before {
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 560px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 0px;
-  content: "";
-}
+                          <li class="dropdown-item">
+                            <a href="/product-category/pharmaceutical-bottles"
+                              >PHARMACEUTICAL BOTTLES</a
+                            >
+                          </li>
 
-.search-active .search-popup form {
-  transform: scaleX(1);
-  -webkit-transition-delay: 1200ms;
-  -moz-transition-delay: 1200ms;
-  -ms-transition-delay: 1200ms;
-  -o-transition-delay: 1200ms;
-  transition-delay: 1200ms;
-}
-.search-popup form {
-  position: absolute;
-  max-width: 700px;
-  top: 50%;
-  left: 15px;
-  right: 15px;
-  margin: -35px auto 0;
-  transform: scaleX(0);
-  transform-origin: center;
-  background-color: #111111;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.search-popup .form-group {
-  position: relative;
-  margin: 0px;
-  overflow: hidden;
-}
+                          <li class="dropdown-item">
+                            <a href="/product-category/biodegradable-plates"
+                              >BIODEGRADABLE PLATES</a
+                            >
+                          </li>
 
-.search-popup .form-group input[type="text"],
-.search-popup .form-group input[type="search"] {
-  position: relative;
-  display: block;
-  font-size: 18px;
-  line-height: 50px;
-  color: #000000;
-  height: 70px;
-  width: 100%;
-  outline: none;
-  border: none;
-  padding: 10px 30px;
-  background-color: #ffffff;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.search-popup .form-group input[type="submit"],
-.search-popup .form-group button {
-  position: absolute;
-  right: 30px;
-  top: 0px;
-  height: 40px;
-  line-height: 65px;
-  background: transparent;
-  text-align: center;
-  font-size: 24px;
-  color: #000000;
-  padding: 0;
-  cursor: pointer;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  border: unset;
-}
-/*end search css*/
+                          <li class="dropdown-item">
+                            <a href="/product-category/cbd-bottles"
+                              >CBD BOTTLES</a
+                            >
+                          </li>
 
-/*banner css*/
-.banner-slider .owl-item .item {
-  height: 600px;
-  position: relative;
-}
-.banner_txt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-.banner_txt .caption2 {
-  text-align: center;
-  max-width: 60%;
-  margin: 0 auto;
-}
-.banner_txt h2.text3 {
-  color: #fff;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  line-height: normal;
-}
-.banner_txt h2.text2 {
-  color: #fffdfd;
-  text-align: center;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1px;
-}
-.btn-bnnr {
-  display: inline-block;
-  margin-top: 30px;
-}
-.btn-bnnr a {
-  padding: 20px 20px;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: normal;
-  color: #ffffff;
-  background: #7bc372;
-}
-.btn-bnnr a:hover {
-  background: #2e93a4;
-  transition: 0.3s;
-}
-.btn-bnnr.btn-bnnr2 a {
-  background: #2e93a4;
-}
-.btn-bnnr.btn-bnnr2 a:hover {
-  background: #7bc372;
-}
-.banner-slider .owl-nav {
-  display: block !important;
-}
+                          <li class="dropdown-item" class="mb-hide">
+                            <a href="/product-category/custom-boxes"
+                              >CUSTOM BOXES</a
+                            >
+                          </li>
 
-.banner-slider .owl-nav .owl-prev:after {
-  content: "";
-  background-image: url(/images/left.png);
-  position: absolute;
-  top: 300px;
-  left: 0;
-  background-size: 100%;
-  background-position: center;
-  width: 40px;
-  height: 40px;
-}
-.banner-slider .owl-nav .owl-next:after {
-  content: "";
-  background-image: url(/images/left.png);
-  position: absolute;
-  top: 300px;
-  right: 0;
-  background-size: 100%;
-  background-position: center;
-  transform: rotate(180deg);
-  width: 40px;
-  height: 40px;
-}
-/*end banner css*/
+                          <li class="dropdown-item">
+                            <a href="/products">All Products</a>
+                          </li>
+                        </ul>
+                      </li>
 
-/*service css*/
-section.servicess-section {
-  position: relative;
-  height: 250px;
-}
-section.servicess-section .top-up {
-  position: relative;
-  z-index: 2;
-}
-section.servicess-section .top-up .service-up {
-  position: absolute;
-  background: #fff;
-  top: -50px;
-  left: 0;
-}
-.main-services {
-  padding: 30px;
-}
-.main-services .image-service {
-  position: relative;
-  text-align: center;
-  width: 50%;
-  height: 130px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-}
-/*end service css*/
+                      <li class="dropdown-item">
+                        <a href="/product-category/biodegradable-plates"
+                          >BIODEGRADABLE PLATES</a
+                        >
+                      </li>
 
-/*quality section css*/
+                      <li class="dropdown-item">
+                        <a href="/product-category/cbd-bottles">CBD BOTTLES</a>
+                      </li>
 
-section.quality-section {
-  background: #7bc372;
-}
+                      <li class="dropdown-item" class="mb-hide">
+                        <a href="/product-category/custom-boxes"
+                          >CUSTOM BOXES</a
+                        >
+                      </li>
 
-/*end quality section css*/
+                      <li class="dropdown-item">
+                        <a href="/products">All Products</a>
+                      </li>
+                    </ul>
+                  </li>
 
-/* video section css */
-.video-sec {
-    position: relative;
-}
-.video-img {
-    position: relative;
-    height: 400px;
-    width: 100%;
-}
-.video-btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* end video section css */
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blogs">PHARMACEUTICAL BOTTLES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact-us">CONTACT US</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+      </div>
 
-/*footer css*/
+      <section class="section-content py-5">
+        <h6>
+          Demo for Bootstrap multi level dropdown menu <br />
+          Based on Bootstrap 5 CSS framework.
+        </h6>
+        <p>
+          For this demo page you should connect to the internet to receive files
+          from CDN like Bootstrap5 CSS, Bootstrap5 JS
+        </p>
 
-footer.footer-section {
-  background: #2e93a4;
-}
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
 
-/*end footer css*/
+        <a href="#" class="btn btn-success">
+          &laquo Back to tutorial or Download code</a
+        >
+      </section>
+    </div>
+    <!-- container //  -->
+  </body>
+
+  <!-- Jquery -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- Fontawesome -->
+  <script src="./assets/js/all.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Owl-carousel -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
+ 
+</html>
