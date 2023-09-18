@@ -1,114 +1,172 @@
 <style>
-@media (max-width: 767px) {
-  section.logo-sec.main-header {
-    position: fixed;
-    height: 80px;
-    top: 0;
-    left: 0;
-    background: #1c1c1c;
-    z-index: 999;
-    width: 100%;
-  }
-  .header-logo-contain {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    position: relative;
-  }
-  section.logo-sec.main-header .row-second {
-    display: none !important;
-  }
+  @media (max-width: 767px) {
+    section.logo-sec.main-header {
+      position: fixed;
+      height: 80px;
+      top: 0;
+      left: 0;
+      background: #1c1c1c;
+      z-index: 999;
+      width: 100%;
+    }
+    .header-logo-contain {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      position: relative;
+    }
+    section.logo-sec.main-header .row-second {
+      display: none !important;
+    }
 
-  /* containe class change */
-  .my-navbar .container-fluids {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .my-navbar .header-logo.mobile-logo {
-    display: block !important;
-    text-align: left !important;
-  }
-  .my-navbar .header-logo.mobile-logo img.img-fluid {
-    width: 60%;
-  }
-  .my-navbar button.navbar-toggler {
-    border-color: #fff !important;
-    height: 45px;
-    background: #fff;
-  }
-  .main-header .navbar-collapse {
-    position: fixed;
-    top: 0;
-    background: #1c1c1c;
-    left: 0;
-    transform: translateX(-1000px);
-    width: 70%;
-    padding-top: 60px;
-    height: 100vh !important;
-    text-align: left;
-    transition: 0.3s;
-  }
-  .main-header .navbar-collapse.show {
-    transform: translateX(0px);
-    transition: 0.3s;
-  }
+    /* containe class change */
+    .my-navbar .container-fluids {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .my-navbar .header-logo.mobile-logo {
+      display: block !important;
+      text-align: left !important;
+    }
+    .my-navbar .header-logo.mobile-logo img.img-fluid {
+      width: 60%;
+    }
+    .my-navbar button.navbar-toggler {
+      border-color: #fff !important;
+      height: 45px;
+      background: #fff;
+    }
+    .main-header .navbar-collapse {
+      position: fixed;
+      top: 0;
+      background: #1c1c1c;
+      left: 0;
+      transform: translateX(-1000px);
+      width: 70%;
+      padding-top: 60px;
+      height: 100vh !important;
+      text-align: left;
+      transition: 0.3s;
+    }
+    .main-header .navbar-collapse.show {
+      transform: translateX(0px);
+      transition: 0.3s;
+    }
 
-  /* =======
+    /* =======
   =======for banner=======
   =======*/
-  section.banner-section .bannermain {
-    position: relative !important;
-    top: 0 !important;
-    padding: 10px !important;
-  }
-  body .bannermain .item.active {
-    height: 200px;
-  }
-  .banner_txt .caption2 {
-    max-width: 100% !important;
-    padding: 0 !important;
-  }
-  .banner_txt h2.text3 {
-    font-size: 14px;
-  }
-  .banner_txt h2.text3:after {
-    content: "";
-    width: 22px !important;
-    left: -25px !important;
-  }
-  .banner_txt h2.text2 {
-    font-size: 12px !important;
-    line-height: 1px !important;
-  }
-  .banner_txt p.text4 {
-    font-size: 9px !important;
-    line-height: 14px !important;
-  }
-  .btn-bnnr {
-    margin-top: 0px !important;
-  }
-  .btn-bnnr a {
-    font-size: 10px !important;
-    padding: 5px 10px !important;
-  }
-  .banner-slider .owl-dots {
-    display: none !important;
-  }
+    section.banner-section .bannermain {
+      position: relative !important;
+      top: 0 !important;
+      padding: 10px !important;
+    }
+    body .bannermain .item.active {
+      height: 200px;
+    }
+    .banner_txt .caption2 {
+      max-width: 100% !important;
+      padding: 0 !important;
+    }
+    .banner_txt h2.text3 {
+      font-size: 14px;
+    }
+    .banner_txt h2.text3:after {
+      content: "";
+      width: 22px !important;
+      left: -25px !important;
+    }
+    .banner_txt h2.text2 {
+      font-size: 12px !important;
+      line-height: 1px !important;
+    }
+    .banner_txt p.text4 {
+      font-size: 9px !important;
+      line-height: 14px !important;
+    }
+    .btn-bnnr {
+      margin-top: 0px !important;
+    }
+    .btn-bnnr a {
+      font-size: 10px !important;
+      padding: 5px 10px !important;
+    }
+    .banner-slider .owl-dots {
+      display: none !important;
+    }
 
-  /* =======
+    /* =======
   =======for product=======
   =======*/
-  section.product-section {
-    padding-bottom: 40px;
-    padding-top: 30px;
+    section.product-section {
+      padding-bottom: 40px;
+      padding-top: 30px;
+    }
+    .sub-heading h3 {
+      font-size: 12px !important;
+      line-height: 15px !important;
+    }
+    .sub-heading h3:before {
+      height: 0px;
+      top: auto !important;
+      left: auto !important;
+      bottom: 0px !important;
+      width: 100% !important;
+      border-top: none !important;
+      border-bottom: 1px solid !important;
+    }
+    .defalt-heading h2 {
+      font-size: 16px !important;
+      line-height: 10px !important;
+    }
+    .main-div {
+      margin-top: 30px;
+    }
+    body .product-list {
+      width: 100%;
+      height: 170px;
+      position: relative;
+    }
+    .product-content {
+      text-align: center !important;
+      padding: 10px !important;
+    }
+    .product-url,
+    .product-url-main {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .product-url a {
+      font-size: 13px;
+    }
+    .product-txt p {
+      font-size: 10px !important;
+    }
+    .product-url-main .view-details a {
+      font-size: 12px !important;
+      padding: 5px 15px;
+    }
+    /* =======
+  =======for about=======
+  =======*/
+    section.about-section {
+      position: relative;
+      padding: 30px 0px !important;
+    }
+    section.about-section .row {
+      flex-direction: column-reverse;
+    }
+    section.about-section .defalt-heading {
+      padding: 0px !important;
+      display: block !important;
+      text-align: center !important;
+    }
   }
-}
-@media only screen and (max-width: 992px) {
-  section#\#banner {
-    margin-top: 80px;
-    height: 200px !important;
+  @media only screen and (max-width: 992px) {
+    section#\#banner {
+      margin-top: 80px;
+      height: 200px !important;
+    }
   }
-}
-
 </style>
